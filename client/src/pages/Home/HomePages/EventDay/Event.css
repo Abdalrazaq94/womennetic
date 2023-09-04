@@ -1,0 +1,105 @@
+.Event-container {
+    width: 100%;
+    height: 650px;
+    box-sizing: border-box;
+    background-color: #d68e5e;
+  }
+  
+  .Event-card {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  }
+  
+  .Event-text-card {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wem-event-txt {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  
+  .Event-txt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    margin-bottom: 40PX;
+  }
+  
+  .Event-txt p {
+    width: 70%;
+    display: block;
+  }
+  
+  .Event-main-txt {
+    width: 80%;
+    font-size: 22px;
+  }
+  
+  .wom-but {
+    margin-top: 26px;
+  }
+  
+  .Event-text-img {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Event-img {
+    width: 500px;
+    height: 400px;
+
+    background-image: url("./Event.JPG");
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Event-card {
+      flex-direction: column;
+    }
+    .Event-text-card{
+      width: 100%;
+      height: auto;
+
+    }
+    .Event-text-img {
+      width: 100%;
+      height: auto;
+      padding: 30px;
+    }
+    .Event-txt p {
+      height: auto;
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .Event-container {
+      height: auto;
+    }
+    .Event-txt {
+      height: auto;
+      margin-bottom: 40PX;
+      margin-top: -190PX;
+    
+    }
+    .Event-main-txt {
+      font-size: 18px;
+    }
+    .Event-img {
+      width: 100%;
+      width: 300px;
+    }
+  }

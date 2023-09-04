@@ -1,0 +1,26 @@
+.Homebody-about-con {
+    height: auto;
+    box-sizing: border-box;
+}
+
+.HomeBody-about-card {
+    background-image: url("./About-homebody.JPG");
+    background-size: cover; /* Cover the entire element with the background image */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    height: 650px; /* Set a default height */
+}
+
+/* Media query for tablet */
+@media only screen and (max-width: 768px) {
+    .HomeBody-about-card {
+        height: 300px;
+    }
+}
+
+/* Media query for phone */
+@media only screen and (max-width: 480px) {
+    .HomeBody-about-card {
+        height: 200px;
+    }
+}
